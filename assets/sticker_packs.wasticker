@@ -1,0 +1,95 @@
+{
+    "sticker_packs" : [
+    {
+        "tray_image_file" : "tray_Cuppy",
+        "stickers": [
+        {
+            "image_file": "01_Cuppy_smile",
+            "emojis": ["☕","🙂"]
+        },
+        {
+            "image_file": "02_Cuppy_lol",
+            "emojis": ["😄","😀"]
+        },
+        {
+            "image_file": "03_Cuppy_rofl",
+            "emojis": ["😆","😂"]
+        },
+        {
+            "image_file": "04_Cuppy_sad",
+            "emojis": ["😃", "😍"]
+        },
+        {
+            "image_file": "05_Cuppy_cry",
+            "emojis": ["😭","💧"]
+        },
+        {
+            "image_file": "06_Cuppy_love",
+            "emojis": ["😍","♥"]
+        },
+        {
+            "image_file": "07_Cuppy_hate",
+            "emojis": ["💔","👎"]
+        },
+        {
+            "image_file": "08_Cuppy_lovewithmug",
+            "emojis": ["😍","💑"]
+        },
+        {
+            "image_file": "09_Cuppy_lovewithcookie",
+            "emojis": ["😘","🍪"]
+        },
+        {
+            "image_file": "10_Cuppy_hmm",
+            "emojis": ["🤔","😐"]
+        },
+        {
+            "image_file": "11_Cuppy_upset",
+            "emojis": ["😱","😵"]
+        },
+        {
+            "image_file": "12_Cuppy_angry",
+            "emojis": ["😡","😠"]
+        },
+        {
+            "image_file": "13_Cuppy_curious",
+            "emojis": ["❓","🤔"]
+        },
+        {
+            "image_file": "14_Cuppy_weird",
+            "emojis": ["🌈","😜"]
+        },
+        {
+            "image_file": "15_Cuppy_bluescreen",
+            "emojis": ["💻","😩"]
+        },
+        {
+            "image_file": "16_Cuppy_angry",
+            "emojis": ["😡","😤"]
+        },
+        {
+            "image_file": "17_Cuppy_tired",
+            "emojis": ["😩","😨"]
+        },
+        {
+            "image_file": "18_Cuppy_workhard",
+            "emojis": ["😔", "😨"]
+        },
+        {
+            "image_file": "19_Cuppy_shine",
+            "emojis": ["🎉","✨"]
+        },
+        {
+            "image_file": "20_Cuppy_disgusting",
+            "emojis": ["🤮","👎"]
+        },
+        {
+            "image_file": "21_Cuppy_hi",
+            "emojis": ["🖐","🙋"]
+        },
+        {
+            "image_file": "22_Cuppy_bye",
+            "emojis": ["🖐","👋"]
+        }]
+    }]
+}
