@@ -10,11 +10,11 @@ struct Interoperability {
     static var AndroidStoreLink: String?
 
     //Consegue enviar?
-    static func canSend() -> Bool {
-        return UIApplication.shared.canOpenURL(URL(string: "whatsapp://")!)
+    static func canOpenUrl(url: String) -> Bool {
+        return UIApplication.shared.canOpenURL(URL(string: url)!)
     }
     
-    static func send(json: String) -> Bool {
+    static func sendToWhatsapp(json: String) -> Bool {
         if let bundleIdentifier = Bundle.main.bundleIdentifier {
             if bundleIdentifier.contains(DefaultBundleIdentifier) {
                 fatalError("Your bundle identifier must not include the default one.");
@@ -30,13 +30,13 @@ struct Interoperability {
         }
         
         DispatchQueue.main.async {
-            if canSend() {
+            
                 if #available(iOS 10.0, *) {
                     UIApplication.shared.open(WhatsAppURL, options: [:], completionHandler: nil)
                 } else {
                     UIApplication.shared.openURL(WhatsAppURL)
                 }
-            }
+            
         }
         return true
     }

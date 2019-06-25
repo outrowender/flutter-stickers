@@ -12,7 +12,7 @@ import Flutter
     let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
   
     //create channel
-    let interoperabilityChannel = FlutterMethodChannel(name: "samples.flutter.dev/interoperability", binaryMessenger: controller)
+    let interoperabilityChannel = FlutterMethodChannel(name: "interoperabilityChannel", binaryMessenger: controller)
 
     //call the function
     interoperabilityChannel.setMethodCallHandler({
@@ -20,12 +20,12 @@ import Flutter
         
         
         switch call.method {
-        case "canSend":
+        case "canOpenUrl":
             //Call canSend method using bridge
-            result(Interoperability.canSend())
-        case "send":
+            result(Interoperability.canOpenUrl(url: call.arguments as! String))
+        case "sendToWhatsapp":
             //call send method sending stickers
-            result(Interoperability.send(json: call.arguments as! String))
+            result(Interoperability.sendToWhatsapp(json: call.arguments as! String))
         default:
             result(FlutterMethodNotImplemented)
             return
