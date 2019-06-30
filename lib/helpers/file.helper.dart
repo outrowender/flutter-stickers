@@ -1,6 +1,8 @@
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/foundation.dart';
+import 'package:archive/archive.dart';
+import 'package:archive/archive_io.dart';
 
 class FileHelper {
   static var httpClient = new HttpClient();
