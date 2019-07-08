@@ -4,6 +4,7 @@ import 'dart:typed_data';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:interoperabilidade/helpers/file.helper.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:archive/archive.dart';
@@ -26,12 +27,30 @@ class _FileViewState extends State<FileView> {
           children: <Widget>[
             FlatButton(
               child: Text('try download'),
-              onPressed: () async => {await download()},
+              onPressed: () async => {await convertToWebp()},
             )
           ],
         ),
       ),
     );
+  }
+
+  convertToWebp() async {
+    var file = 'assets/WAStickersPack/png/02_Cuppy_lol.png';
+
+    var img = await rootBundle.load(file);
+    var baseImage = base64.encode(img.buffer.asUint8List());
+
+    const interoperabilityChannel =
+        const MethodChannel('interoperabilityChannel');
+
+    var encoded = await interoperabilityChannel.invokeMethod(
+        'encodeToWebP', baseImage) as String;
+
+    print('aqui la vai->');
+    print(encoded);
+
+    return encoded;
   }
 
   download() async {

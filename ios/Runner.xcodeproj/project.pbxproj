@@ -14,6 +14,16 @@
 		3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E231D5E22C3148F00D698F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E231D5D22C3148F00D698F9 /* GoogleService-Info.plist */; };
 		5E30F82022BFD05C00C78B95 /* Interoperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30F81F22BFD05C00C78B95 /* Interoperability.swift */; };
+		5E81F8A222D2CBAD006A3662 /* WebPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81F8A122D2CBAD006A3662 /* WebPManager.swift */; };
+		5E81F8A422D2D142006A3662 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8A322D2D142006A3662 /* UIKit.framework */; };
+		5E81F8A622D2D14D006A3662 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8A522D2D14D006A3662 /* CoreFoundation.framework */; };
+		5E81F8A822D2D155006A3662 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8A722D2D155006A3662 /* QuartzCore.framework */; };
+		5E81F8AA22D2D15D006A3662 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8A922D2D15D006A3662 /* AssetsLibrary.framework */; };
+		5E81F8AC22D2D167006A3662 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8AB22D2D167006A3662 /* ImageIO.framework */; };
+		5E81F8AE22D2D172006A3662 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8AD22D2D172006A3662 /* Accelerate.framework */; };
+		5E81F8B022D2D17A006A3662 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8AF22D2D17A006A3662 /* MobileCoreServices.framework */; };
+		5E81F8B222D2D18C006A3662 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8B122D2D18C006A3662 /* libz.tbd */; };
+		5E81F8B422D2D1CC006A3662 /* YYImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8B322D2D1CC006A3662 /* YYImage.framework */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9740EEBA1CF902C7004384FC /* Flutter.framework */; };
 		9705A1C71CF904A300538489 /* Flutter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9740EEBA1CF902C7004384FC /* Flutter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -46,6 +56,16 @@
 		4349FAB9E345EB3E941FCF7E /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		5E231D5D22C3148F00D698F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5E30F81F22BFD05C00C78B95 /* Interoperability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interoperability.swift; sourceTree = "<group>"; };
+		5E81F8A122D2CBAD006A3662 /* WebPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPManager.swift; sourceTree = "<group>"; };
+		5E81F8A322D2D142006A3662 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5E81F8A522D2D14D006A3662 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5E81F8A722D2D155006A3662 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5E81F8A922D2D15D006A3662 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		5E81F8AB22D2D167006A3662 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		5E81F8AD22D2D172006A3662 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		5E81F8AF22D2D17A006A3662 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5E81F8B122D2D18C006A3662 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5E81F8B322D2D1CC006A3662 /* YYImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YYImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
@@ -67,6 +87,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E81F8B422D2D1CC006A3662 /* YYImage.framework in Frameworks */,
+				5E81F8B222D2D18C006A3662 /* libz.tbd in Frameworks */,
+				5E81F8B022D2D17A006A3662 /* MobileCoreServices.framework in Frameworks */,
+				5E81F8AE22D2D172006A3662 /* Accelerate.framework in Frameworks */,
+				5E81F8AC22D2D167006A3662 /* ImageIO.framework in Frameworks */,
+				5E81F8AA22D2D15D006A3662 /* AssetsLibrary.framework in Frameworks */,
+				5E81F8A822D2D155006A3662 /* QuartzCore.framework in Frameworks */,
+				5E81F8A622D2D14D006A3662 /* CoreFoundation.framework in Frameworks */,
+				5E81F8A422D2D142006A3662 /* UIKit.framework in Frameworks */,
 				9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */,
 				3B80C3941E831B6300D905FE /* App.framework in Frameworks */,
 				05F9A1123D71327387067127 /* Pods_Runner.framework in Frameworks */,
@@ -89,9 +118,27 @@
 		468AB045E2A3632442EAAA91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E81F8B322D2D1CC006A3662 /* YYImage.framework */,
+				5E81F8B122D2D18C006A3662 /* libz.tbd */,
+				5E81F8AF22D2D17A006A3662 /* MobileCoreServices.framework */,
+				5E81F8AD22D2D172006A3662 /* Accelerate.framework */,
+				5E81F8AB22D2D167006A3662 /* ImageIO.framework */,
+				5E81F8A922D2D15D006A3662 /* AssetsLibrary.framework */,
+				5E81F8A722D2D155006A3662 /* QuartzCore.framework */,
+				5E81F8A522D2D14D006A3662 /* CoreFoundation.framework */,
+				5E81F8A322D2D142006A3662 /* UIKit.framework */,
 				C4C70BB3F24DD7E41F23B453 /* Pods_Runner.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E81F89E22D2C9FA006A3662 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5E81F8A122D2CBAD006A3662 /* WebPManager.swift */,
+				5E30F81F22BFD05C00C78B95 /* Interoperability.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
@@ -129,8 +176,8 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				5E81F89E22D2C9FA006A3662 /* Helpers */,
 				5E231D5D22C3148F00D698F9 /* GoogleService-Info.plist */,
-				5E30F81F22BFD05C00C78B95 /* Interoperability.swift */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -253,6 +300,7 @@
 				"${PODS_ROOT}/../.symlinks/flutter/ios/Flutter.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -265,6 +313,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -320,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				5E81F8A222D2CBAD006A3662 /* WebPManager.swift in Sources */,
 				5E30F82022BFD05C00C78B95 /* Interoperability.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
@@ -406,6 +456,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -535,6 +586,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -564,6 +616,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

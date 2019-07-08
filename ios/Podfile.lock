@@ -102,12 +102,19 @@ PODS:
   - path_provider (0.0.1):
     - Flutter
   - Protobuf (3.8.0)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
 
 DEPENDENCIES:
   - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - Flutter (from `.symlinks/flutter/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
+  - YYImage
+  - YYImage/WebP
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -125,6 +132,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - YYImage
 
 EXTERNAL SOURCES:
   cloud_firestore:
@@ -155,7 +163,8 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   path_provider: f96fff6166a8867510d2c25fdcc346327cc4b259
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
 
-PODFILE CHECKSUM: ebd43b443038e611b86ede96e613bd6033c49497
+PODFILE CHECKSUM: 7cd3c7d88fdff3365b25fd4013a871df4a76b0ba
 
 COCOAPODS: 1.7.2
