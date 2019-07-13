@@ -47,10 +47,18 @@ class _FileViewState extends State<FileView> {
     var encoded = await interoperabilityChannel.invokeMethod(
         'encodeToWebP', baseImage) as String;
 
-    print('aqui la vai->');
-    print(encoded);
-
     return encoded;
+  }
+
+  Future<String> downloadAndConvertToB64(String url) async {
+    var fileHelper = new FileHelper();
+
+    var download = await fileHelper.downloadFile(
+      url,
+      'image.png',
+    );
+
+    return base64Encode(download.readAsBytesSync());
   }
 
   download() async {

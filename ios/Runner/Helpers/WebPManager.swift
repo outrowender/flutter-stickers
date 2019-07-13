@@ -38,7 +38,7 @@ class WebPManager {
         return encoder.encode()
     }
     
-    func encodeFromB64(pngBase64 data: String) -> String? {
+    static func encodeFromB64(pngBase64 data: String) -> String? {
         guard let encoder = YYImageEncoder(type: YYImageType.webP) else {
             return nil
         }
@@ -51,11 +51,7 @@ class WebPManager {
             return nil
         }
         
-        let strBase64 = encoded.base64EncodedString(options: .lineLength64Characters)
+        return encoded.base64EncodedString(options: .lineLength64Characters)
         
-        print("hold the fileeeee -> ")
-        print(strBase64)
-        
-        return strBase64
     }
 }

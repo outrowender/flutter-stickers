@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interoperabilidade/models/sticker.model.dart';
 import 'package:interoperabilidade/views/file.view.dart';
 import 'package:interoperabilidade/views/pack.view.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -46,20 +47,20 @@ class _SearchViewState extends State<SearchView> {
                 children:
                     snapshot.data.documents.map((DocumentSnapshot document) {
                   return ListTile(
-                    title: Text(document['title']),
+                    title: Text(document['name']),
                     subtitle: Text(document['author']),
-                    trailing: Image.network(document['icon']),
+                    trailing: Image.network(document['tray_image']),
                     onTap: () => {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(
-                              builder: (context) => PackView(
-                                    {
-                                      'id': document.documentID,
-                                      'title': document['title'],
-                                    },
-                                  ),
-                            ),
+                            MaterialPageRoute(builder: (context) {
+                              StickerPack pack = new StickerPack();
+                              pack.identifier = document.documentID;
+                              pack.name = document['name'];
+                              pack.publisher = document['author'];
+                              pack.trayImage = document['tray_image'];
+                              return PackView(pack);
+                            }),
                           )
                         },
                   );

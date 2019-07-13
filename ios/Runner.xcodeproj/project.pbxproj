@@ -24,6 +24,7 @@
 		5E81F8B022D2D17A006A3662 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8AF22D2D17A006A3662 /* MobileCoreServices.framework */; };
 		5E81F8B222D2D18C006A3662 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8B122D2D18C006A3662 /* libz.tbd */; };
 		5E81F8B422D2D1CC006A3662 /* YYImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81F8B322D2D1CC006A3662 /* YYImage.framework */; };
+		5E9D84C322D9488F00B65F11 /* StickerPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D84C222D9488F00B65F11 /* StickerPack.swift */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9740EEBA1CF902C7004384FC /* Flutter.framework */; };
 		9705A1C71CF904A300538489 /* Flutter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9740EEBA1CF902C7004384FC /* Flutter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -66,6 +67,7 @@
 		5E81F8AF22D2D17A006A3662 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5E81F8B122D2D18C006A3662 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		5E81F8B322D2D1CC006A3662 /* YYImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YYImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9D84C222D9488F00B65F11 /* StickerPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPack.swift; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				5E81F8A122D2CBAD006A3662 /* WebPManager.swift */,
 				5E30F81F22BFD05C00C78B95 /* Interoperability.swift */,
+				5E9D84C222D9488F00B65F11 /* StickerPack.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				5E81F8A222D2CBAD006A3662 /* WebPManager.swift in Sources */,
 				5E30F82022BFD05C00C78B95 /* Interoperability.swift in Sources */,
+				5E9D84C322D9488F00B65F11 /* StickerPack.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

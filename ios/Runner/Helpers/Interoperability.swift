@@ -11,6 +11,7 @@ struct Interoperability {
 
     //Consegue enviar?
     static func canOpenUrl(url: String) -> Bool {
+        //return true
         return UIApplication.shared.canOpenURL(URL(string: url)!)
     }
     

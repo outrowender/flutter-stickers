@@ -23,14 +23,9 @@ import Flutter
         case "canOpenUrl":
             //Call canSend method using bridge
             result(Interoperability.canOpenUrl(url: call.arguments as! String))
-        case "sendToWhatsapp":
-            //call send method sending stickers
-            result(Interoperability.sendToWhatsapp(json: call.arguments as! String))
             
-        case "encodeToWebP":
-            //call encoder
-            let webpm = WebPManager()
-            result(webpm.encodeFromB64(pngBase64: call.arguments as! String))
+        case "sendToWhatsapp":
+            result(StickerPack.loadFromJson(json: call.arguments as! String))
             
         default:
             result(FlutterMethodNotImplemented)
