@@ -1,33 +1,59 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:interoperabilidade/styles.android.dart';
+import 'package:flutter/services.dart';
+import 'package:interoperabilidade/styles.apple.dart';
 import 'package:interoperabilidade/views/search.view.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  //app só functiona na vertical
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+  return runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Stickers',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        // Define the default brightness and colors.
-        brightness: Brightness.dark,
-        primaryColor: Colors.lightBlue[800],
-        accentColor: Colors.cyan[600],
+    //para android
+    if (Platform.isAndroid) {
+      return MaterialApp(
+        title: 'Flutter Stickers',
+        debugShowCheckedModeBanner: false,
+        theme: AndroidStyles.materialThemeData,
+        home: SearchView(),
+      );
+    }
 
-        // Define the default font family.
-        fontFamily: 'Montserrat',
-
-        // Define the default TextTheme. Use this to specify the default
-        // text styling for headlines, titles, bodies of text, and more.
-        textTheme: TextTheme(
-          headline: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
-          title: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
-          body1: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
-        ),
-      ),
-      home: SearchView(),
-    );
+    //para ios
+    if (Platform.isIOS) {
+      return CupertinoApp(
+          title: 'Flutter Stickers',
+          debugShowCheckedModeBanner: false,
+          theme: AppleStyles.cupertinoThemeData,
+          home: CupertinoPageScaffold(
+            child: CustomScrollView(
+              slivers: <Widget>[
+                const CupertinoSliverNavigationBar(
+                  largeTitle: const Text('Flutter stickers'),
+                ),
+                SliverSafeArea(
+                  top: false,
+                  minimum: const EdgeInsets.only(top: 4),
+                  sliver: SliverList(
+                    delegate: SliverChildBuilderDelegate((context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Text('aaa'),
+                      );
+                    }),
+                  ),
+                )
+              ],
+            ),
+          ));
+    }
   }
 }

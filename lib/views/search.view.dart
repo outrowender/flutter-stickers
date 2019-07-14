@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:interoperabilidade/models/sticker.model.dart';
-import 'package:interoperabilidade/views/file.view.dart';
 import 'package:interoperabilidade/views/pack.view.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -17,31 +16,28 @@ class _SearchViewState extends State<SearchView> {
         title: TextField(
           decoration: InputDecoration(
             border: InputBorder.none,
-            hintText: 'Enter a search term',
+            hintText: 'Search',
             icon: Icon(Icons.search),
           ),
           autocorrect: false,
           textInputAction: TextInputAction.search,
         ),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.perm_media),
-            onPressed: () => {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => FileView()),
-                  )
-                },
-          )
-        ],
       ),
       body: StreamBuilder<QuerySnapshot>(
         stream: Firestore.instance.collection('packs').snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
-          if (snapshot.hasError) return Text('Error: ${snapshot.error}');
+          //se houver erros ao carregar o projeto
+          if (snapshot.hasError)
+            return Center(
+              child: Text('Error ${snapshot.error}'),
+            );
           switch (snapshot.connectionState) {
+            //caso não tenha carregado as figurinhas
             case ConnectionState.waiting:
-              return Text('Loading...');
+              return Center(
+                child: Text('Loading...'),
+              );
+            //se carregar, mostra a lista
             default:
               return ListView(
                 children:
