@@ -45,13 +45,14 @@ class WebPManager {
         
         let dataDecoded : Data = Data(base64Encoded: data, options: .ignoreUnknownCharacters)!
         
+        encoder.lossless = true
         encoder.addImage(with: dataDecoded, duration: 0.0)
         
         guard let encoded = encoder.encode() else {
             return nil
         }
         
-        return encoded.base64EncodedString(options: .lineLength64Characters)
+        return encoded.base64EncodedString()
         
     }
 }

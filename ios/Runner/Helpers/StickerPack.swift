@@ -24,13 +24,12 @@ struct StickerPack: Codable {
         
         for (index, item) in pack.stickers.enumerated() {
             pack.stickers[index].image_data = WebPManager.encodeFromB64(pngBase64: item.image_data)!
-            print(index, "ok")
         }
         
         //encode again
         let jsonDataOut = try! JSONEncoder().encode(pack)
         let jsonString = String(data: jsonDataOut, encoding: .utf8)!
-        
+               
         return Interoperability.sendToWhatsapp(json: jsonString)
         
     }

@@ -80,6 +80,9 @@ class _PackViewState extends State<PackView> {
     }
 
     //salva o pacote em json
+    this.pack.androidPlayStoreLink = '';
+    this.pack.iosAppStoreLink = '';
+
     this.pack.sendToWhatsApp();
   }
 
